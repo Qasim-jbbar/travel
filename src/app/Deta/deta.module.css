@@ -1,0 +1,52 @@
+.content{
+    width: max-content;
+    margin: 35px
+}
+.img{
+    background-color: antiquewhite;
+    width: 249px;
+    height: 248px;
+}
+.cover{
+    background-color: #fbf9f9;
+    width: fit-content;
+}
+.article{
+    background-color: #c6c6c6;
+
+}
+.Image{
+    width: 200px;
+    height: 200px;
+}
+.Home{
+    max-width: 1000px;
+    padding: 0 20px;
+    justify-content: center;
+
+}
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.article{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.article p{
+    margin-left: auto;
+    font-family: system-ui;
+}
+ .Link{
+    
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+ 

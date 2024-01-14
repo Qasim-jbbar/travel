@@ -1,0 +1,25 @@
+.Footer{
+    background-color: rgb(0, 32, 40);
+}
+.Footer .child  {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.Footer .child  a{
+    margin-left: 10px;
+}
+
+.continer {
+    gap: 51px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 5em;
+  
+}
+.continer a{
+    color: aliceblue;
+}

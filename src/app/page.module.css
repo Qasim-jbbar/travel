@@ -1,0 +1,276 @@
+.main{
+
+    
+}
+
+
+.img_header{
+    background-position: center;
+    object-fit: cover;
+    max-width: -webkit-fill-available;
+    width: -webkit-fill-available;
+    height: 34vh;
+    
+
+}
+
+.cover1{
+ 
+    display: grid;
+    position: sticky;
+    bottom: 621px;
+    justify-content: center;
+    justify-items: center;
+  
+    
+    margin-top: 87px;
+
+
+}
+.gallay_main{
+    background-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: -webkit-fill-available;
+    width: -webkit-fill-available;
+    height: 38vh;
+    margin-bottom: -2vh;
+}
+.cover1 Button {
+color: #1D9AF2;
+background-color: #f6d4a2;
+border: 1px solid #1D9AF2;
+border-radius: 4px;
+padding: 15px 18px 30px 15px;
+cursor: pointer;
+height:32px;
+font-size:14px;
+box-shadow: 0 0 4px #999;
+background-position: center;
+transition: background 0.8s;
+width: max-content ;
+}
+.cover1  Button:hover {
+background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+color: white;
+}
+.cover1  Button:active{
+background-color:#292d3e;
+background-size: 100%;
+transition: background 0s;
+}
+
+
+
+
+
+
+
+
+
+
+.cover3{
+    display: grid;
+    position: sticky;
+    bottom: 400px;
+    justify-content: center;
+
+}
+.app_main{
+
+    background: rgb(2,49,80);
+background: -moz-linear-gradient(0deg, rgba(2,49,80,1) 26%, rgba(2,35,52,1) 56%);
+background: -webkit-linear-gradient(0deg, rgba(2,49,80,1) 26%, rgba(2,35,52,1) 56%);
+background: linear-gradient(0deg, rgba(2,49,80,1) 26%, rgba(2,35,52,1) 56%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023150",endColorstr="#022334",GradientType=1);
+    margin-top: -70px;
+    
+}
+
+.grid{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+}
+
+.grid >.grid_Container{
+    margin-bottom: auto;
+}
+
+
+.grid h2{
+
+    margin-top: revert;
+    display: grid;
+ 
+    align-items: center;
+    justify-items: center;
+}
+.grid p{
+
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    margin: 10px 28px;
+   
+}
+
+
+
+
+.AppContainer1 > .about_context {
+   display: grid;
+    color: aliceblue;
+    font-family: revert-layer;
+    /* font-weight: 100; */
+    width: 33%;
+    margin-right: 22px;
+    justify-content: center;
+    align-content: center;
+}
+.AppContainer1 > .about_context > h1{
+    font-weight: 800;
+    font-size: larger;
+    font-family: monospace;
+    font-style: initial;
+
+}
+.AppContainer1 > .about_context > p{
+    font-family: revert-layer;
+    font-weight:100;
+}
+.AppContainer1 >.aboutimg{
+
+    height: 21em;
+    border-top-left-radius: 219px;
+    border-bottom-left-radius: 225px;
+    width: 30em;
+
+}
+
+.c_link{
+    color: chocolate;
+}
+
+
+.AppContainer1{
+    
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+    margin-top: 25px;
+ 
+
+}
+.AppContainer2{
+    
+    display: flex;
+    justify-content: left;
+    margin-right: auto;
+
+}
+
+
+.AppContainer2 > .aboutimg2{
+
+    height: 21em;
+    border-top-right-radius: 219px;
+    border-bottom-right-radius: 225px;
+    width: 30em;
+}
+
+.AppContainer2 > .about_context2{
+    display: grid;
+    color: aliceblue;
+    font-family: revert-layer;
+    /* font-weight: 100; */
+    width: 33%;
+    margin-left: 22px;
+    justify-content: center;
+    align-content: center;
+
+    margin-left: 4em;
+}
+
+
+.AppContainer3{
+    display: flex;
+justify-content: center;
+align-items: start;
+}
+
+.AppContainer3 >.Container1 > h1, .Container1 > p {
+    display: flex;
+    /* display: -webkit-box; */
+    /* justify-content: center; */
+    align-items: flex-end;
+    margin-bottom: 0;
+    width: 23em;
+    color: rgb(223, 240, 255);
+   
+
+ }
+  .AppContainer3 > .Container1 > Button{
+    direction: rtl;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 123px;
+    height: 3em;
+    margin-left: 8em;
+    margin-top: 15px;
+}
+
+
+.AppContainer3 > .Container1 > Button {
+    color: #1D9AF2;
+    border: 1px solid #1D9AF2;
+    border-radius: 4px;
+    padding: 15px 18px 30px 15px;
+    cursor: pointer;
+    height:32px;
+    font-size:14px;
+    box-shadow: 0 0 4px #999;
+    background-position: center;
+    transition: background 0.8s;
+    width: max-content;
+    
+    }
+    .AppContainer3 > .Container1 > Button:hover {
+    background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+    color: white;
+    }
+    .AppContainer3 > .Container1 >  Button:active{
+    background-color:#292d3e;
+    background-size: 100%;
+    transition: background 0s;
+    }
+    
+
+
+
+
+
+
+
+ .Container2 > h1, .Container2 > p{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 0; */
+    /* width: 23em; */
+    color: rgb(223, 240, 255);
+ }
+
+
+
+.cover_gallary > .cover2{
+ 
+    width: -moz-fit-content;
+    width: -webkit-fill-available;
+    height: 19em;
+}
+  
+

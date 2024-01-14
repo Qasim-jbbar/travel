@@ -1,0 +1,80 @@
+.header {
+  color: aliceblue;
+  position: relative;
+  background-color: rgb(0, 32, 40);
+}
+
+.link{
+color: #1D9AF2;
+border: 1px solid #1D9AF2;
+border-radius: 4px;
+padding: 15px 18px 30px 15px;
+cursor: pointer;
+height:32px;
+font-size:14px;
+box-shadow: 0 0 4px #999;
+background-position: center;
+transition: background 0.8s;
+width: max-content ;
+}
+.link:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  color: white;
+}
+
+.link:active {
+  background-color: #292d3e;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+
+
+.header .content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .content ul {
+ display: flex;
+  gap: 20px;
+}
+.header .content .Image{
+  display: flex;
+  margin-left: auto;
+  margin-right: 22px
+ 
+}
+.header .content .boxsearch{
+
+}
+.list{
+  
+margin: auto;
+
+}
+.content .IoMdSearch{
+  font-family: inherit;
+  /* font-feature-settings: inherit; */
+  /* font-variation-settings: inherit; */
+  font-size: 100%;
+  margin: -7px;
+  padding: 5px;
+ margin-right: auto;
+}
+.content .IoMdSearch .icon{
+  display: flex;
+  align-items: center;
+ font-size: xx-large;
+  font-weight: bold;
+  font-size: larger;
+  gap: 15px;
+
+}
+
+
+/* .content{
+  margin:4px 24px 7px 22px;
+} */
