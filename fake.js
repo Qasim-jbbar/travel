@@ -1,51 +1,60 @@
 export const travel = [
     {
       id: 1,
-      name: "بصرة",
+      name: "IRAQ CAMPING",
+      details:"Camping-exploration-Hiking",
       image: "https://picsum.photos/400/400",
       price: 12000,
     },
     {
       id: 2,
-      name: "نينوى",
+      name: "Weh Dave",
+      details:"Camping-Tourism-heritage places ",
       image: "https://picsum.photos/400/400",
       price: 25000,
     },
+
     {
       id: 3,
-      name: " سليمانية",
+      name: " CHA Camp",
+      details:"Camping-adventurer ",
       image: "https://picsum.photos/400/408",
       price: 9000,
     },
     {
       id: 4,
-      name: "بغداد ",
+      name: "X5 Group ",
+      details:"Travel-camping-nature-adventure",
       image: "https://picsum.photos/400/401",
       price: 10000,
     },
     {
       id: 5,
-      name: "واسط",
+      name: "Jabal Adventures",
+      details:"Travel-camping-nature",
       image: "https://picsum.photos/400/402",
       price: 13000,
     },
     {
       id: 6,
-      name: " بابل",
+      name: " Wen",
+      details:"Camping-adventurer ",
       image: "https://picsum.photos/400/408",
       price: 9000,
     },
     {
       id: 7,
-      name: "كركوك ",
+      name: "Bil Weekend ",
+      details:"Camping-heritage places ",
       image: "https://picsum.photos/400/401",
       price: 10000,
     },
     {
       id: 8,
-      name: "  اربيل",
+      name: "  Guru Camp",
+      details:"Camping-Tourism-heritage places ",
       image: "https://picsum.photos/400/402",
-      price: "13000",
+     
     },
   ];
   

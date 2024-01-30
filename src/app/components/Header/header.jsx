@@ -21,15 +21,15 @@ const Header = () => {
          
           <ul className={styles.list}>
            
-          <li>Contact </li>
-            <li>Company </li>
-            <li>Home</li>
+          <li><Link href="/trips">Trips</Link> </li>
+            <li><Link href="/about">Company</Link> </li>
+            <li><Link href="http://localhost:3000">Home</Link></li>
            
 
           </ul>
           <h1 className={styles.Image}>User</h1>
 
-<Link href="#" className={styles.link}>Login</Link>
+<Link href="/about" className={styles.link}>Login</Link>
  
 
 

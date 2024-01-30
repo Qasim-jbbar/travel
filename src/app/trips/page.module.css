@@ -1,0 +1,89 @@
+.body{
+    background-color:#132E35;
+    color: #eacca5;
+}
+.Container{
+    margin-top: 4em;
+    justify-items: center;
+    display: -webkit-inline-box;
+
+    
+}
+
+.contentimg{
+
+    width: 34em;
+    margin: 3em;
+}
+
+.Container h2{
+    border-bottom: 1px solid white;
+    width: 6em;
+    /* box-shadow: -1px -4px 10px -3px white; */
+    margin-bottom: revert;}
+
+
+ 
+
+    .main_Container{
+        margin-left: 6em;
+    }
+    .Comment{
+        width: 19em;
+        box-shadow: -11px -6px 16px -10px rgb(157, 37, 13);
+    margin: auto;
+    }
+    .Comment p{font-family: auto;
+        font-style: italic;
+
+    }
+
+    .Comment h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AppContainer{
+        max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .reservate{
+    justify-items: center;
+    width: 35em;
+    max-width: 34em;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    background-color: brown;
+    flex-wrap: wrap-reverse;
+    /* margin-bottom: 5px; */
+    height: 3em;
+    color: black;
+    margin: auto;
+    border-radius: 1em;
+    
+  }
+
+  .reservate button{
+    letter-spacing: 1px;
+    height: -webkit-fill-available;
+    background-color: dimgray;
+    color: black;
+    border-radius: inherit;
+    width: 9em;
+}
+.reservate button:hover{
+    background-color: #d2e7ed;
+}
+  
+.reservate p{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-inline-start: 24px;
+
+}
+  

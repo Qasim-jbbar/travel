@@ -1,3 +1,17 @@
+.body{
+    background-color:#132E35;
+}
+.random_img{
+ 
+    box-shadow: 0px 0px 9px 2px rgb(54 104 115);
+        color: transparent;
+   
+}
+
+.AppConiner1{
+
+    background-color: #d62828;
+}
 .content{
     width: max-content;
     margin: 35px
@@ -10,11 +24,19 @@
 .cover{
     background-color: #fbf9f9;
     width: fit-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 35px;
+    border: 3px solid dodgerblue;
+    box-shadow: 0px 0px 9px 2px rgb(54 104 115);   
 }
-.article{
-    background-color: #c6c6c6;
+.cover h1{
+    font-family: cursive;
+    font-style: unset;
+}
 
-}
+
+
 .Image{
     width: 200px;
     height: 200px;
@@ -28,7 +50,9 @@
 .grid{
 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 2em;
+   
 }
 .article{
     display: flex;
@@ -39,6 +63,7 @@
 .article p{
     margin-left: auto;
     font-family: system-ui;
+    margin-inline: auto;
 }
  .Link{
     

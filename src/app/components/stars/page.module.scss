@@ -1,0 +1,333 @@
+.root {
+    opacity: 0.7;
+
+   
+    --blue: #0F2A86;
+    --blue-dark: #0B2065;
+    --tent: #2A52DD;
+    --fire: #f18948;
+    --light: #E4E5E4;
+    --gray-dark: #534C50;
+    --blouse: #DB8968;
+    --mountain: #153965;
+    --spruce-mid: #4570bf;
+    --tent-back: #153965;
+    --tent-back2: #25579A;
+    --pole: #143966;
+    --dog: #fefefe;
+    --face: #f58948;
+    --nose: #143b64;
+    --log: #4770c0;
+    --log-shadow: #709df6;
+    --fire-inner: #fdc8a8;
+    --leg-right: #11345a;
+    --leg-left: #143965;
+    --skin1: #fbc0a2;
+    --skin2: #ffc097;
+    --body: #f1894a;
+    --hair: #26579a;
+    --bear: #27589b;
+    --bear-face: #4570bf;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background: var(--bg);
+}
+
+.camping {
+    width: 735px;
+    height: 470px;
+    margin: 20px 10px;
+    position: relative;
+
+    .line {
+        width: 100%;
+        height: 3px;
+        background: var(--light);
+        position: absolute;
+        bottom: 3.9rem;
+        left: 0;
+        opacity: .68;
+        z-index: 3;
+    }
+
+    .sky {
+        width: 550px;
+        height: 200px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 110px;
+
+        .moon {
+            width: 95px;
+            height: 60px;
+            background: var(--bg);
+            border-radius: 50%;
+            box-shadow: inset -20px 0 0 -5px var(--light);
+            position: absolute;
+            top: 50px;
+            right: 55px;
+        }
+
+        .star {
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            border: 1px solid var(--light);
+            border-radius: 50%;
+            position: absolute;
+            top: 67px;
+            right: 155px;
+
+            &--part-fill {
+                box-shadow: 10px -53px 0 1px var(--bg), 10px -53px 0 2px var(--light),
+                    22px 15px 0 -5px var(--bg), 22px 15px 0 -4px var(--light),
+                    35px 2px 0 -5px var(--bg), 35px 2px 0 -4px var(--light),
+                    100px -35px 0 -3px var(--bg), 100px -35px 0 -2px var(--light),
+                    -142px -17px 0 -3px var(--bg), -142px -17px 0 -2px var(--light),
+                    -172px -35px 0 -1px var(--bg), -172px -35px 0 0 var(--light),
+                    -160px 10px 0 -4px var(--bg), -160px 10px 0 -3px var(--light);
+            }
+
+            &--full-fill {
+                box-shadow: 26px -21px 0 -1px var(--light), 145px -6px 0 0 var(--light),
+                    147px 22px 0 -3px var(--light), 132px 28px 0 -3px var(--light),
+                    150px 60px 0 1px var(--light), 92px 60px 0 -3px var(--light),
+                    97px 77px 0 -4px var(--light), 65px 102px 0 0 var(--light),
+                    -20px 25px 0 -2px var(--light), -50px 5px 0 -4px var(--light),
+                    -52px -28px 0 -2px var(--light), -65px -41px 0 -4px var(--light),
+                    -100px -22px 0 -4px var(--light), -117px -42px 0 -2px var(--light),
+                    -190px -26px 0 -4px var(--light), -262px -27px 0 -3px var(--light),
+                    -246px 17px 0 -1px var(--light), -315px 12px 0 -3px var(--light),
+                    -386px 12px 0 -2px var(--light), -370px 80px 0 -2px var(--light),
+                    -298px 116px 0 -2px var(--light);
+            }
+
+            &--1 {
+                top: 110px;
+                right: 105px;
+                animation: 1.5s linear 3s infinite alternate star;
+            }
+    
+            &--2 {
+                top: 130px;
+                right: 150px;
+                transform: scale(1.4);
+                animation: 1.5s linear 4.5s infinite alternate star;
+            }
+    
+            &--3 {
+                top: 20px;
+                right: 365px;
+                animation: 1.5s linear 0s infinite alternate star;
+            }
+    
+            &--4 {
+                top: 50px;
+                right: 480px;
+                transform: scale(0.7);
+                animation: 1.5s linear 1.5s infinite alternate star;
+            }
+    
+            &--5 {
+                top: 135px;
+                right: 425px;
+                transform: scale(1.7);
+                animation: 1.5s linear 6s infinite alternate star;
+            }
+        }
+    }
+
+    .mountain {
+        &__bottom {
+            border-bottom: 145px solid var(--mountain);
+            border-left: 105px solid transparent;
+            border-right: 52px solid transparent;
+            height: 0;
+            width: 355px;
+            position: absolute;
+            bottom: 60px;
+            left: 80px;
+        
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-bottom: 85px solid var(--mountain);
+                border-left: 300px solid transparent;
+                position: absolute;
+                bottom: 0;
+                left: 0px;
+            }
+
+            &::after {
+                content: '';
+                width: 120px;
+                height: 80px;
+                background: var(--mountain);
+                transform: rotate(75deg);
+                border-radius: 30% 0 0 100%;
+                position: absolute;
+                bottom: 5px;
+                right: -7px;
+            }
+        }
+
+        &__point1 {
+            height: 0;
+            width: 355px;
+            position: absolute;
+            bottom: 205px;
+            left: 177px;
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-bottom: 45px solid var(--mountain);
+                transform: rotate(-11deg);
+                border-left: 300px solid transparent;
+                position: absolute;
+                bottom: 28px;
+                left: 0px;
+            }
+
+            &::after {
+                content: '';
+                width: 55px;
+                height: 70px;
+                background: var(--bg);
+                border-radius: 0 0 70% 50%;
+                position: absolute;
+                bottom: 82px;
+                right: 53px;
+            }
+        }
+
+        &__point2 {
+            height: 125px;
+            width: 50px;
+            background: var(--mountain);
+            border-radius: 100% 100% 0 0;
+            position: absolute;
+            bottom: 270px;
+            left: 381px;
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 130px solid transparent;
+                border-right: 130px solid transparent;
+                border-top: 115px solid var(--mountain);
+                border-radius: 50%;
+                transform: rotate(-52deg);
+                position: absolute;
+                bottom: -35px;
+                left: -144px;
+            }
+
+            &::after {
+                content: '';
+                width: 120px;
+                height: 50px;
+                background: var(--bg);
+                border-radius: 0 0 80% 0;
+                transform: rotate(-8deg);
+                position: absolute;
+                bottom: -67px;
+                right: 149px;
+            }
+        }
+    }
+
+    .spruce {
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 160px solid var(--spruce-mid);
+        position: absolute;
+        bottom: 65px;
+        left: 35px;
+
+        &__mid,
+        &__top {
+            &::before,
+            &::after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 60px solid var(--spruce-mid);
+                transform: rotate(18deg);
+                position: absolute;
+                bottom: -90px;
+                left: -27px;
+            }
+
+            &::after {
+                transform: rotate(163deg);
+                left: -33px;
+            }
+        }
+
+        &__top {
+            transform: scale(0.6);
+            bottom: 35px;
+            position: absolute;
+
+            &::before {
+                border-top: 60px solid transparent;
+                transform: rotate(25deg);
+            }
+
+            &::after {
+                transform: rotate(155deg);
+            }
+        }
+
+    
+
+
+       
+    }
+
+  
+
+      
+
+        }
+
+
+   
+     
+
+
+    
+    
+
+@keyframes spruce1 {
+    0% {transform: scale(0.9) rotate(-1deg);}
+    100% {transform: scale(0.9) rotate(0.5deg);}
+}
+
+@keyframes spruce2 {
+    0% {transform: rotate(0.5deg);}
+    100% {transform: rotate(-1deg);}
+}
+
+
+
+
+@keyframes star {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+

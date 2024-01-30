@@ -1,6 +1,6 @@
-.main{
-
-    
+.main p{ 
+    font-family: revert-layer;
+    font-weight: 100; 
 }
 
 
@@ -15,40 +15,49 @@
 }
 
 .cover1{
- 
-    display: grid;
-    position: sticky;
-    bottom: 621px;
+    display: block; 
+    position: absolute;
+   
+    top: 7em;
+    width: -webkit-fill-available;
+}
+
+.cover1 h1{
+    align-items: center;
     justify-content: center;
-    justify-items: center;
-  
-    
-    margin-top: 87px;
-
-
+    display: flex;
+    font-size: inherit;
+    text-shadow: 7px 13px 5px rgb(5 5 5);
+    color: ghostwhite;
+    font-family: cursive;
+    font-style: italic;
 }
 .gallay_main{
-    background-position: center;
-    -o-object-fit: cover;
     object-fit: cover;
     max-width: -webkit-fill-available;
     width: -webkit-fill-available;
     height: 38vh;
-    margin-bottom: -2vh;
+    /* margin-bottom: -2vh; */
+    position: relative;
 }
 .cover1 Button {
-color: #1D9AF2;
-background-color: #f6d4a2;
-border: 1px solid #1D9AF2;
-border-radius: 4px;
-padding: 15px 18px 30px 15px;
-cursor: pointer;
-height:32px;
-font-size:14px;
-box-shadow: 0 0 4px #999;
-background-position: center;
-transition: background 0.8s;
-width: max-content ;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    color: #1D9AF2;
+    background-color: #f6d4a2;
+    border: 1px solid #1D9AF2;
+    border-radius: 4px;
+    padding: 15px 18px 30px 15px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 14px;
+    box-shadow: 0 0 4px #999;
+    background-position: center;
+    transition: background 0.8s;
+    width: -moz-max-content;
+    display: flex;
 }
 .cover1  Button:hover {
 background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
@@ -74,7 +83,25 @@ transition: background 0s;
     position: sticky;
     bottom: 400px;
     justify-content: center;
+    
 
+}
+.cover3 h1{letter-spacing: 28px;
+    animation: animate 7s linear infinite;
+    color: antiquewhite;
+}
+.cover3 h1:hover{
+    letter-spacing: 28px;
+    color: antiquewhite;
+    animation: animate 2s linear infinite;
+    text-shadow: 1px 4px 4px #ffde02;
+
+}
+
+@keyframes animate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 .app_main{
 
@@ -96,6 +123,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023150",endCo
 
 .grid >.grid_Container{
     margin-bottom: auto;
+    box-shadow: 2px -3px 11px -8px red;
 }
 
 
@@ -130,7 +158,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023150",endCo
     margin-right: 22px;
     justify-content: center;
     align-content: center;
+
+
 }
+
+.AppContainer1 > .about_context p{  }
 .AppContainer1 > .about_context > h1{
     font-weight: 800;
     font-size: larger;
@@ -139,6 +171,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023150",endCo
 
 }
 .AppContainer1 > .about_context > p{
+    font-family: revert-layer;
+    font-weight: 100;
+    box-shadow: -6px 0px 2px -1px #8d1919a6;
+    font-size: medium;
     font-family: revert-layer;
     font-weight:100;
 }
@@ -153,6 +189,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023150",endCo
 
 .c_link{
     color: chocolate;
+}
+.star{
+    position: absolute;
+    top: 17em;
 }
 
 
@@ -195,6 +235,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023150",endCo
     margin-left: 4em;
 }
 
+.AppContainer2 > .about_context2 p{  font-family: revert-layer;
+    font-weight: 100;
+    box-shadow: -6px 0px 2px -1px #8d1919a6;
+    font-size: medium;}
+
 
 .AppContainer3{
     display: flex;
@@ -202,43 +247,48 @@ justify-content: center;
 align-items: start;
 }
 
-.AppContainer3 >.Container1 > h1, .Container1 > p {
+.AppContainer3  h1,  .AppContainer3  p {
+    font-family: auto;
+    font-style: italic;
     display: flex;
     /* display: -webkit-box; */
     /* justify-content: center; */
-    align-items: flex-end;
-    margin-bottom: 0;
-    width: 23em;
+    /* align-items: flex-end; */
+    margin-bottom: 14px;
+    width: 28em;
     color: rgb(223, 240, 255);
+    box-shadow: 9px 1px 3px -5px #8aac
    
 
  }
   .AppContainer3 > .Container1 > Button{
-    direction: rtl;
+    
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none;
-    width: 123px;
-    height: 3em;
-    margin-left: 8em;
+    /* user-select: none; */
+    /* width: 123px; */
+    /* height: 3em; */
+    margin-left: 11em;
     margin-top: 15px;
-}
-
-
-.AppContainer3 > .Container1 > Button {
     color: #1D9AF2;
     border: 1px solid #1D9AF2;
     border-radius: 4px;
     padding: 15px 18px 30px 15px;
     cursor: pointer;
-    height:32px;
-    font-size:14px;
+    height: 32px;
+    font-size: 14px;
     box-shadow: 0 0 4px #999;
     background-position: center;
     transition: background 0.8s;
+    width: -moz-max-content;
     width: max-content;
-    
-    }
+}
+
+
+
+
+
+
     .AppContainer3 > .Container1 > Button:hover {
     background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
     color: white;
@@ -272,5 +322,6 @@ align-items: start;
     width: -webkit-fill-available;
     height: 19em;
 }
+
   
 

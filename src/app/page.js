@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import AppContainer from './components/AppContaner/AppContaner'
 import styles from "@/app/page.module.css"
@@ -8,9 +9,9 @@ import { IoMdPeople } from "react-icons/io";
 import { LiaShuttleVanSolid } from "react-icons/lia";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { Footer } from './components/Footer/Footer';
-import Gallery from './slidGalary/gallary';
-
-
+import Pagee from './slideeglallry/page';
+import { GiCampfire } from "react-icons/gi";
+import Page from './components/stars/page';
 export default function Home() {
   const pathimage='/assets/bg.jpg';
 
@@ -21,18 +22,19 @@ export default function Home() {
 
   const coverimg='/assets/g12.jpg'
   return (
-    <main >
+    <main className={styles.main}>
 
 
 
 <div className={styles.gallay_main}>
-  <div className={styles.img_header} >
+
 
      <Image
 
 src={pathimage}
 alt="logo"
 sizes="100vw"
+className={styles.cover2}
 width={500}
 height={100}
 style={{
@@ -40,23 +42,27 @@ style={{
   height: '100%',
 }}
 />
-</div>
+
 
 <div className={styles.cover1}>
 
   <h1>Traveling is a journey of the soul, an opportunity to find yourself in the midst of the chaos of the world </h1><br/>
-  <Button >  discover the world </Button>
-  
+
+  <Button auto color="primary">
+ <Link href="/about">Discover the World</Link>
+</Button>
 </div>
 </div>
 
-
-
+{/* 
+<div>
+<GiCampfire/>
+</div> */}
 
 
 <div className={styles.app_main}>
   {/* <AppContainer > 1*/}
-<Space height={32}/>
+<Space height={122}/>
 
 <div className={styles.AppContainer1}>
 <div className={styles.about_context}>
@@ -92,6 +98,7 @@ height={200}
 />
 
 <div className={styles.about_context2}>
+
   <h1> discover and engoy </h1>
   <p>  From Zakho and the falls of Gli Ali Bey, to Samarra, where Malwiyah is, then Babylon, where Bir Harut and Marut are, then Dhiqar, where the marshes are,
      until Basra, where the Tigris and Euphrates rivers meet to form the Shatt al-Arab, eighteen governorates of our beloved Iraq, full of love and peace.  </p>
@@ -133,9 +140,14 @@ height={200}
     Our camp program provides you with trips within our beloved Iraq. Through us, you can book your trip to any place you want to go.
      Our website is the first form through which you can book your entire trip.
  </h1>
-    <Button className={styles.btn}>  discover Travel</Button>
+    <Button className={styles.btn}> 
+    <Link href="/trips"> discover Travel</Link> 
+    </Button>
   </div> 
 
+  </div>
+  <div className={styles.star}>
+      <Page/>
   </div>
 
 </AppContainer>
@@ -178,8 +190,6 @@ height={200}
 </div>
 </AppContainer>
 
-
-<Gallery/>
 <Space height={63}/>
 
 <div className={styles.cover_gallary}>
@@ -207,7 +217,7 @@ height={100}
 <Space height={100}/>
 </div>
 
-<Footer/>
+
     </main>
   )
 }
