@@ -18,7 +18,8 @@
 
 .Container h2{
     border-bottom: 1px solid white;
-    width: 6em;
+    width: fit-content;
+
     /* box-shadow: -1px -4px 10px -3px white; */
     margin-bottom: revert;}
 
@@ -33,12 +34,12 @@
         box-shadow: -11px -6px 16px -10px rgb(157, 37, 13);
     margin: auto;
     }
-    .Comment p{font-family: auto;
+    .Comment > p{font-family: auto;
         font-style: italic;
 
     }
 
-    .Comment h1{
+    .Comment > h1{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,7 +68,7 @@
     
   }
 
-  .reservate button{
+  .reservate > button{
     letter-spacing: 1px;
     height: -webkit-fill-available;
     background-color: dimgray;
@@ -75,11 +76,11 @@
     border-radius: inherit;
     width: 9em;
 }
-.reservate button:hover{
+.reservate > button:hover{
     background-color: #d2e7ed;
 }
   
-.reservate p{
+.reservate > p{
     margin: 0;
     display: flex;
     align-items: center;

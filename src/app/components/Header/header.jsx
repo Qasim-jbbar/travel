@@ -2,8 +2,12 @@ import AppContainer from "../AppContaner/AppContaner";
 import styles from "@/app/components/Header/header.module.css"
 import { MdDarkMode } from "react-icons/md";
 import Link from "next/link";
+import Image from 'next/image'
+
 const Header = () => {
 
+  const avatar_user='/assets/avatar2.png'
+  const logo='/assets/d8.png'
   
   return (
 
@@ -12,7 +16,17 @@ const Header = () => {
          <AppContainer width={1300}>
         <div className={styles.content}>
        
-                   <ul className={styles.IoMdSearch}>Logo <nav  className={styles.icon} > 
+                   <ul className={styles.IoMdSearch}> <Image
+
+src={ logo}
+alt="logo"
+sizes="100vw"
+className={styles.cover2}
+width={70}
+height={80}
+
+/>
+<nav  className={styles.icon} > 
                   
                    < MdDarkMode/>
                    </nav></ul>
@@ -27,9 +41,19 @@ const Header = () => {
            
 
           </ul>
-          <h1 className={styles.Image}>User</h1>
+          
+           <Image
 
-<Link href="/about" className={styles.link}>Login</Link>
+src={ avatar_user}
+alt="avatar"
+sizes="100vw"
+className={styles.cover2}
+width={60}
+height={80}
+
+/>
+
+<Link href="/about" className={styles.link}>Sign In</Link>
  
 
 

@@ -3,6 +3,8 @@
 
 generator client {
   provider = "prisma-client-js"
+  output   = "./prisma/client"
+
 }
 
 datasource db {
@@ -14,17 +16,6 @@ model Company {
  name   String   @unique
  descrption String
  img    String?
- locations Location[]
 }
 
-model Location {
- id      Int      @id @default(autoincrement())
- name    String
- descrption   String
- salary   String
- img    String?
- company   Company   @relation(fields: [companyId], references: [id])
- companyId Int
- createdAt DateTime @default(now())
 
-}

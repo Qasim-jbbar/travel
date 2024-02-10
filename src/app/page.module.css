@@ -162,12 +162,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023150",endCo
 
 }
 
-.AppContainer1 > .about_context p{  }
 .AppContainer1 > .about_context > h1{
     font-weight: 800;
     font-size: larger;
     font-family: monospace;
     font-style: initial;
+    border-bottom: 3px groove #fcfcfc;
+    max-width: fit-content;
+
 
 }
 .AppContainer1 > .about_context > p{
@@ -240,7 +242,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023150",endCo
     box-shadow: -6px 0px 2px -1px #8d1919a6;
     font-size: medium;}
 
-
+.about_context2 h1{
+   
+    border-bottom: 3px ridge #9ca3af;
+    width: fit-content;
+}
 .AppContainer3{
     display: flex;
 justify-content: center;
@@ -323,5 +329,5 @@ align-items: start;
     height: 19em;
 }
 
-  
+          
 

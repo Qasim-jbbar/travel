@@ -4,25 +4,33 @@ import AppContainer from './components/AppContaner/AppContaner'
 import styles from "@/app/page.module.css"
 import { Space } from './components/space/space';
 import { Button, Link } from '@nextui-org/react';
-
 import { IoMdPeople } from "react-icons/io";
 import { LiaShuttleVanSolid } from "react-icons/lia";
 import { FaMapLocationDot } from "react-icons/fa6";
-import { Footer } from './components/Footer/Footer';
 import Pagee from './slideeglallry/page';
 import { GiCampfire } from "react-icons/gi";
 import Page from './components/stars/page';
+
+
+
+
 export default function Home() {
   const pathimage='/assets/bg.jpg';
-
   const gallary1='/assets/4.jpg';
   const gallary2='/assets/g6.jpg';
   const gallary3='/assets/g13.jpg';
-
-
   const coverimg='/assets/g12.jpg'
+ 
+ 
+
+
   return (
     <main className={styles.main}>
+
+
+
+
+
 
 
 
@@ -53,11 +61,6 @@ style={{
 </Button>
 </div>
 </div>
-
-{/* 
-<div>
-<GiCampfire/>
-</div> */}
 
 
 <div className={styles.app_main}>
@@ -100,6 +103,7 @@ height={200}
 <div className={styles.about_context2}>
 
   <h1> discover and engoy </h1>
+  <br></br>
   <p>  From Zakho and the falls of Gli Ali Bey, to Samarra, where Malwiyah is, then Babylon, where Bir Harut and Marut are, then Dhiqar, where the marshes are,
      until Basra, where the Tigris and Euphrates rivers meet to form the Shatt al-Arab, eighteen governorates of our beloved Iraq, full of love and peace.  </p>
 
@@ -113,6 +117,7 @@ height={200}
 <div className={styles.AppContainer1}>
 <div className={styles.about_context}>
   <h1> Transportation </h1>
+  <br/>
   <p>We have modern and safe transport trucks equipped with all means of transportation. With us, we guarantee your happiness and safety.</p>
 
  

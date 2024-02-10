@@ -1,22 +1,67 @@
-
+"use client"
 import { travel } from "../../../fake";
 import styles from "@/app/about/page.module.css"
 import AppContainer from "../components/AppContaner/AppContaner";
 import { Link } from "@nextui-org/react";
-import { PiArrowCircleRightFill } from "react-icons/pi";
+import { FaSquareCaretRight } from "react-icons/fa6";
 import Image from "next/image";
+import { useState, useEffect } from 'react';
 
 
 
  const Page =() =>{
 
 const random_img="https://source.unsplash.com/random/300x200?sig=${Math.random()}";
-    return( 
+
+const [products, setProducts] = useState([]);
+
+
+// useEffect(() => {
+//   fetch('/api/products')
+//     .then((response) => {
+//       console.log('Raw Response:', response);
+//       if (!response.ok) {
+//         throw new Error('HTTP error! Status: ${response.status}');
+//       }
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log('Data:', data);
+//       setProducts(data);
+//     })
+//     .catch((error) => {
+//       console.error('Error fetching products:', error);
+//       setError(error.message);
+//     });
+// }, []);
+
+
+
+return( 
  
 
 
     
     <div className={styles.body}>
+
+
+{/* 
+<div>
+      <h1>Your Page</h1>
+      <ul>
+        {products.map((product) => (
+          <li key={product.id}>
+            {product.name} - {product.description}
+          </li>
+        ))}
+      </ul>
+    </div> */}
+
+
+
+
+
+
 
 <AppContainer width={1100} height={400}>
       <div >
@@ -58,10 +103,10 @@ height={10}
                <h1> Company : {index.name}</h1>
                <div className={styles.article}>
                 
-               
+
                  
                  <p>{index.details}</p>
-                 <Link href="/trips"><PiArrowCircleRightFill/> </Link>
+                 <Link href="/trips"><FaSquareCaretRight className={styles.icone}/> </Link>
                </div>
              </div>
            </div>

@@ -1,11 +1,11 @@
 
-import { travel } from "../../../fake";
 import styles from"@/app/trips/page.module.css"
 import AppContainer from "../components/AppContaner/AppContaner";
 import { Link, avatar } from "@nextui-org/react";
 import { PiArrowCircleRightFill } from "react-icons/pi";
 import Image from "next/image";
 import { Space } from "../components/space/space";
+import Header from "../components/Header/header";
 
 
 
@@ -68,7 +68,7 @@ Salary of trip: 130$
 
 </p>
 <button  className={styles.btnreservation}>
- <Link href="/forma">reservate</Link>
+ <Link href="/Forma">reservate</Link>
 </button>
 </div>
 
@@ -384,6 +384,8 @@ style={{
 </AppContainer>
 
 <Space height={99}/>
+
+
       </div> ) 
 
 

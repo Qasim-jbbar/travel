@@ -1,0 +1,38 @@
+.body{
+}
+
+.forma{
+    color: black;
+    background-color: rgb(230, 220, 201);
+    height: 36em;
+   
+}
+
+
+.btn button{
+    background-color: #f54848; 
+       height: 3em;
+    width: 32em;
+    max-width: -webkit-fill-available;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.content{
+    margin-inline-start: 1em;
+    position: absolute;
+    bottom: 18em;
+    margin-bottom: auto;
+    height: 25em;
+}
+
+.img {
+    margin-left: auto;
+    width: 24em;
+}
+
+.input{    height: 2em;
+    width: 14em;
+    border-radius: 22px;}

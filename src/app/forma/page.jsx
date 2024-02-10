@@ -1,72 +1,100 @@
-
-import { travel } from "../../../fake";
-import styles from"@/app/trips/page.module.css"
-import AppContainer from "../components/AppContaner/AppContaner";
-import { Link, avatar } from "@nextui-org/react";
-import 'bootstrap/dist/css/bootstrap.css'
-
-
-
-
+import styles from"@/app/Forma/page.module.css"
+import { Listbox } from "@nextui-org/react";
+import { Space } from "../components/space/space";
+import Image from "next/image";
  const Page =() =>{
-   
+      const img1="/assets/forma.png";
+     
 
     return( 
-       
-     <div className="container mx-auto  w-50 " >
-      <div className="form-row">
-         <div className="form-group col-md-6">
-           <label htmlFor="inputEmail4">Email</label>
-           <input type="email" className="form-control" id="inputEmail4" placeholder="examble@gmail.com"/>
-         </div>
-         <div className="form-group col-md-6">
-           <label htmlFor="Phone">Phone</label>
-           <input type="number" className="form-control" id="inputPassword4" placeholder="phone..."/>
-         </div>
-      </div>
-      <div className="form-group">
-         <label htmlFor="inputAddress">Address</label>
-         <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/>
-      </div>
-      <div className="form-group">
-         <label htmlFor="inputAddress2">Address 2</label>
-         <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
-      </div>
-      <div className="form-row">
-         <div className="form-group col-md-6">
-           <label htmlFor="inputCity">City</label>
-           <input type="text" className="form-control" id="inputCity"/>
-         </div>
-         <div className="form-group col-md-4">
-           <label htmlFor="inputState">State</label>
-           <select id="inputState" className="form-control">
-             <option selected>Choose...</option>
-             <option>...</option>
-            
-           </select>
-         </div>
-         <div className="form-group col-md-2">
-           <label htmlFor="inputZip">Zip</label>
-           <input type="text" className="form-control" id="inputZip"/>
-         </div>
-      </div>
-      <div className="form-group">
-         <div className="form-check">
-           <input className="form-check-input" type="checkbox" id="gridCheck"/>
-           <label className="form-check-label" htmlFor="gridCheck">
-             Check me out
-           </label>
-         </div>
-      </div>
+ 
+<div className={styles.body}>
 
-      <button type="submit" className="btn btn-primary mx-40 w-50">submit</button>
+      <div className={styles.forma}>
+<div className={styles.img}>
+    <Image
+
+src={img1}
+alt="logo"
+sizes="300vw"
+width={1100}
+height={1100}
+
+/>
+
+</div>
+
+
+<div className={styles.content}>
+
+
+
+
+<Space height={62}/>
+   
+   <label >Email  : </label>
+
+   <input  className={styles.input}  type="Email" name="name" placeholder=" examble@gmail.com"/>
+
+
+
+
+
+
+    <Space height={42}/>
+   
+     <label >name  : </label>
+
+     <input  className={styles.input} type="text" name="name" placeholder=" Enter your name"/>
+
+
+     <Space height={42}/>
+
+
+<label >Phone  : </label>
+<input  className={styles.input} type="number" name="number" placeholder=" such as : 0783111...."/>
+
+
+
+
+
+<Space height={43}/>
+
+
+
+
+     <label >Address  : </label>
+     <select name="city">
+    <option value="">Select City</option>
+    <option value="Baghdad">  Baghdad </option>
+    <option value="Babylon"> Babylon</option>
+    <option value="	Arbil">	Arbil</option>
+
+    <option value="	Al Anbar">  Al Anbar </option>
+    <option value="Diyala"> Diyala</option>
+    <option value="	Basra">Basra</option>
+
+    <option value="Dahuk">  Dahuk </option>
+    <option value="Sulaymaniyah"> Sulaymaniyah</option>
+    <option value="Karbala">Karbala</option>
+
+    <option value="	Ninawa">  Ninawa </option>
+    <option value="	Dhi Qar"> 	Dhi Qar</option>
+    <option value="Najaf">Najaf</option>
+</select>
+
+
+
+</div>
+<Space height={120}/>
+      <div className={styles.btn}>
+      <button>Submit</button>
+      </div>
+      </div>
+      </div> 
     
-
-      </div>
-            
+       ) 
      
-    )
-
 
 };
 

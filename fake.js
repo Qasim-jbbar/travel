@@ -9,7 +9,7 @@ export const travel = [
     {
       id: 2,
       name: "Weh Dave",
-      details:"Camping-Tourism-heritage places ",
+      details:"Camping-Tourism-heritage  ",
       image: "https://picsum.photos/400/400",
       price: 25000,
     },
@@ -24,7 +24,7 @@ export const travel = [
     {
       id: 4,
       name: "X5 Group ",
-      details:"Travel-camping-nature-adventure",
+      details:"Travel-camping-nature",
       image: "https://picsum.photos/400/401",
       price: 10000,
     },
@@ -52,28 +52,10 @@ export const travel = [
     {
       id: 8,
       name: "  Guru Camp",
-      details:"Camping-Tourism-heritage places ",
+      details:"Camping-Tourism-heritage  ",
       image: "https://picsum.photos/400/402",
      
     },
   ];
   
-  export const categories = [
-    {
-      id: 1,
-      name: "اكلات شرقيه",
-    },
-    {
-      id: 2,
-      name: "اكلات غربيه",
-    },
-    {
-      id: 3,
-      name: "مقبلات",
-    },
-    {
-      id: 4,
-      name: "اصناف شكاكيه",
-    },
-  ];
-  
+ 
